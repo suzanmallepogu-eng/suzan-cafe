@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu — SUZAN CAFÉ</title>
+    <meta name="description"
+        content="Explore the full menu at SUZAN CAFÉ: specialty espresso drinks, hand-poured filter coffee, soothing non-coffee beverages, refreshing cold brews, and fresh artisanal pastries.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================================
+         NAVIGATION BAR
+         ========================================================== -->
+    <header class="header-nav" id="mainHeader">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand-logo" aria-label="SUZAN CAFÉ Home">
+                <span class="logo-main">SUZAN CAFÉ</span>
+                <span class="logo-sub">Coffee • Bakes • Moments</span>
+            </a>
+
+            <nav class="nav-menu" aria-label="Primary Navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="cafe.html" class="nav-link">The Café</a>
+                <a href="menu.html" class="nav-link active">Menu</a>
+                <a href="story.html" class="nav-link">Our Story</a>
+                <a href="experiences.html" class="nav-link">Experiences</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions" style="display: flex; align-items: center; gap: 16px;">
+                <a href="contact.html" class="nav-cta-btn">Visit Us</a>
+                <button class="mobile-toggle" aria-label="Toggle navigation menu" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div>
+            <div style="margin-bottom: 30px;">
+                <span class="logo-main" style="color: var(--coffee-dark);">SUZAN CAFÉ</span>
+                <span class="logo-sub" style="color: var(--text-muted); display: block;">Coffee • Bakes • Moments</span>
+            </div>
+            <nav class="mobile-nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="cafe.html" class="nav-link">The Café</a>
+                <a href="menu.html" class="nav-link active">Menu</a>
+                <a href="story.html" class="nav-link">Our Story</a>
+                <a href="experiences.html" class="nav-link">Experiences</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+        <div style="border-top: 1px solid var(--beige-border); padding-top: 20px;">
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">7:30 AM – 9:00 PM Daily</p>
+            <a href="contact.html" class="btn btn-amber" style="width: 100%;">Find Our Café</a>
+        </div>
+    </div>
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+
+    <!-- ==========================================================
+         PAGE HERO
+         ========================================================== -->
+    <section class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('images/cafe/cafe-counter-espresso.jpg');"></div>
+        <div class="container page-hero-content reveal">
+            <span class="section-tag" style="color: var(--amber-soft);">Freshly Brewed & Baked</span>
+            <h1>OUR MENU</h1>
+            <p class="section-subtitle" style="margin-inline: auto;">
+                Every item is prepared fresh with specialty Arabica beans, organic dairy or oat milk, and genuine
+                dedication to flavor.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- ==========================================================
+         FILTERABLE MENU SECTION
+         ========================================================== -->
+    <section class="section" id="full-menu">
+        <div class="container">
+
+            <!-- Category Filter Buttons -->
+            <div class="menu-filter-nav reveal">
+                <button class="filter-btn active" data-filter="all">All Items</button>
+                <button class="filter-btn" data-filter="coffee">Coffee</button>
+                <button class="filter-btn" data-filter="non-coffee">Non-Coffee</button>
+                <button class="filter-btn" data-filter="cold-drinks">Cold Drinks</button>
+                <button class="filter-btn" data-filter="desserts">Desserts & Bakes</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-items-grid">
+
+                <!-- COFFEE 1: Espresso -->
+                <article class="menu-item reveal" data-category="coffee">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/espresso.jpg" alt="Rich double espresso" loading="lazy">
+                        <span class="card-price-tag">$3.80</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Espresso</h3>
+                        <p class="card-desc">Bold double-shot extraction with thick hazelnut-colored crema, notes of
+                            dark chocolate and toasted almond.</p>
+                        <div class="card-notes">Single Origin • 2oz</div>
+                    </div>
+                </article>
+
+                <!-- COFFEE 2: Americano -->
+                <article class="menu-item reveal" data-category="coffee">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/americano.jpg" alt="Hot Caffe Americano" loading="lazy">
+                        <span class="card-price-tag">$4.20</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Americano</h3>
+                        <p class="card-desc">Freshly pulled double espresso lengthened with hot filtered spring water
+                            for a crisp, aromatic, and clean cup.</p>
+                        <div class="card-notes">Clean & Bright • 8oz / 12oz</div>
+                    </div>
+                </article>
+
+                <!-- COFFEE 3: Cappuccino -->
+                <article class="menu-item reveal" data-category="coffee">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/cappuccino.jpg" alt="Velvety Cappuccino" loading="lazy">
+                        <span class="card-price-tag">$4.75</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Cappuccino</h3>
+                        <p class="card-desc">Equal parts rich espresso, steamed milk, and a luxurious cloud of textured
+                            microfoam with subtle cocoa notes.</p>
+                        <div class="card-notes">Classic Italian Style • 6oz</div>
+                    </div>
+                </article>
+
+                <!-- COFFEE 4: Latte -->
+                <article class="menu-item reveal" data-category="coffee">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/latte.jpg" alt="Artisan Caffe Latte" loading="lazy">
+                        <span class="card-price-tag">$5.20</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Caffe Latte</h3>
+                        <p class="card-desc">Smooth espresso harmonized with silky textured milk and topped with
+                            hand-poured artisan rosette latte art.</p>
+                        <div class="card-notes">Silky • 10oz / 12oz</div>
+                    </div>
+                </article>
+
+                <!-- COFFEE 5: Flat White -->
+                <article class="menu-item reveal" data-category="coffee">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/flat-white.jpg" alt="Flat White Coffee" loading="lazy">
+                        <span class="card-price-tag">$4.90</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Flat White</h3>
+                        <p class="card-desc">Double ristretto topped with a thin layer of velvety microfoam for a
+                            punchier, espresso-forward flavor profile.</p>
+                        <div class="card-notes">Espresso Forward • 6oz</div>
+                    </div>
+                </article>
+
+                <!-- COFFEE 6: Mocha -->
+                <article class="menu-item reveal" data-category="coffee">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/mocha.jpg" alt="Belgian Chocolate Mocha" loading="lazy">
+                        <span class="card-price-tag">$5.60</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Belgian Mocha</h3>
+                        <p class="card-desc">Signature double espresso blended with melted 70% dark Belgian chocolate,
+                            steamed milk, and cocoa dusting.</p>
+                        <div class="card-notes">Decadent Dark Cocoa • 10oz</div>
+                    </div>
+                </article>
+
+                <!-- NON-COFFEE 1: Matcha Latte -->
+                <article class="menu-item reveal" data-category="non-coffee">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/matcha-latte.jpg" alt="Ceremonial Matcha Latte" loading="lazy">
+                        <span class="card-price-tag">$5.50</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Ceremonial Matcha Latte</h3>
+                        <p class="card-desc">Stone-ground Uji ceremonial grade green tea whisked with textured oat milk
+                            and a touch of wild blossom honey.</p>
+                        <div class="card-notes">Antioxidant Rich • Oat Milk Default</div>
+                    </div>
+                </article>
+
+                <!-- NON-COFFEE 2: Hot Chocolate -->
+                <article class="menu-item reveal" data-category="non-coffee">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/hot-chocolate.jpg" alt="Artisan Hot Chocolate" loading="lazy">
+                        <span class="card-price-tag">$5.20</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Artisan Hot Chocolate</h3>
+                        <p class="card-desc">Rich single-estate chocolate gently melted into steamed whole milk with a
+                            touch of Madagascar vanilla bean.</p>
+                        <div class="card-notes">Pure Comfort • Non-Caffeinated</div>
+                    </div>
+                </article>
+
+                <!-- NON-COFFEE 3: Artisan Tea -->
+                <article class="menu-item reveal" data-category="non-coffee">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/artisan-tea.jpg" alt="Loose Leaf Herbal Tea" loading="lazy">
+                        <span class="card-price-tag">$4.50</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Loose-Leaf Herbal Tea</h3>
+                        <p class="card-desc">Curated whole-leaf infusions: Earl Grey Lavender, Organic Sencha Green, or
+                            Calming Chamomile Lemongrass.</p>
+                        <div class="card-notes">Pot of Tea • Refillable</div>
+                    </div>
+                </article>
+
+                <!-- COLD DRINKS 1: Iced Latte -->
+                <article class="menu-item reveal" data-category="cold-drinks">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/iced-latte.jpg" alt="Layered Iced Latte" loading="lazy">
+                        <span class="card-price-tag">$5.40</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Iced Caffe Latte</h3>
+                        <p class="card-desc">Fresh espresso poured over cold whole milk and crystalline ice cubes.
+                            Refreshing, smooth, and revitalizing.</p>
+                        <div class="card-notes">Chilled • Vanilla Syrup Optional</div>
+                    </div>
+                </article>
+
+                <!-- COLD DRINKS 2: Cold Brew -->
+                <article class="menu-item reveal" data-category="cold-drinks">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/cold-brew.jpg" alt="Slow Steeped Cold Brew" loading="lazy">
+                        <span class="card-price-tag">$4.95</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Signature Cold Brew</h3>
+                        <p class="card-desc">Steeped cold for 18 hours to yield an ultra-smooth, low-acidity brew with
+                            naturally sweet notes of molasses and stone fruit.</p>
+                        <div class="card-notes">18-Hour Steep • High Caffeine</div>
+                    </div>
+                </article>
+
+                <!-- DESSERTS 1: Butter Croissant -->
+                <article class="menu-item reveal" data-category="desserts">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/croissant.jpg" alt="Golden Butter Croissant" loading="lazy">
+                        <span class="card-price-tag">$3.95</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Artisan Butter Croissant</h3>
+                        <p class="card-desc">Laminated with cultured French butter for a crispy, multi-layered golden
+                            crust and airy, soft honeycomb interior.</p>
+                        <div class="card-notes">Baked Daily • Served Warm</div>
+                    </div>
+                </article>
+
+                <!-- DESSERTS 2: Brownie -->
+                <article class="menu-item reveal" data-category="desserts">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/brownie.jpg" alt="Sea Salt Fudge Brownie" loading="lazy">
+                        <span class="card-price-tag">$4.50</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Sea-Salt Fudge Brownie</h3>
+                        <p class="card-desc">Dense, fudgy dark chocolate brownie topped with crunchy roasted walnuts and
+                            flakes of Maldon sea salt.</p>
+                        <div class="card-notes">Rich Chocolate • House Specialty</div>
+                    </div>
+                </article>
+
+                <!-- DESSERTS 3: Basque Cheesecake -->
+                <article class="menu-item reveal" data-category="desserts">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/cheesecake.jpg" alt="Basque Burnt Cheesecake" loading="lazy">
+                        <span class="card-price-tag">$6.20</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Basque Burnt Cheesecake</h3>
+                        <p class="card-desc">Caramelized caramelized exterior with an ultra-creamy, molten center and
+                            delicate hints of fresh lemon zest.</p>
+                        <div class="card-notes">Custard Texture • Gluten Friendly</div>
+                    </div>
+                </article>
+
+                <!-- DESSERTS 4: Cookies -->
+                <article class="menu-item reveal" data-category="desserts">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/cookies.jpg" alt="Chocolate Chunk Cookies" loading="lazy">
+                        <span class="card-price-tag">$3.50</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Chocolate Chunk Cookie</h3>
+                        <p class="card-desc">Crispy golden edges, a soft chewy center loaded with melted dark chocolate
+                            chunks and vanilla bean aroma.</p>
+                        <div class="card-notes">Chewy & Warm</div>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ==========================================================
+         MILK & BREWING PHILOSOPHY BANNER
+         ========================================================== -->
+    <section class="section section-dark" style="padding-block: 60px;">
+        <div class="container">
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; text-align: center;">
+                <div class="reveal">
+                    <h4 style="color: var(--amber-soft); margin-bottom: 8px;">Plant-Based Milks</h4>
+                    <p style="font-size: 0.88rem; color: var(--text-light-muted);">Oat, Almond, and Soy milk available
+                        at no extra charge.</p>
+                </div>
+                <div class="reveal">
+                    <h4 style="color: var(--amber-soft); margin-bottom: 8px;">Decaf Available</h4>
+                    <p style="font-size: 0.88rem; color: var(--text-light-muted);">Swiss Water Processed specialty decaf
+                        with full flavor intact.</p>
+                </div>
+                <div class="reveal">
+                    <h4 style="color: var(--amber-soft); margin-bottom: 8px;">Dietary Options</h4>
+                    <p style="font-size: 0.88rem; color: var(--text-light-muted);">Gluten-free and vegan pastry
+                        selections freshly prepared daily.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================================
+         FINAL CTA
+         ========================================================== -->
+    <section class="final-cta-section">
+        <div class="final-cta-bg" style="background-image: url('images/cafe/cafe-interior-main.jpg');"></div>
+        <div class="container final-cta-content reveal">
+            <span class="section-tag" style="color: var(--amber-soft);">Tasted Fresh Daily</span>
+            <h2 style="font-size: clamp(2.4rem, 5vw, 4rem); margin-bottom: 20px; color: #ffffff;">
+                ORDER YOUR FAVORITE AT THE BAR.
+            </h2>
+            <p
+                style="font-size: 1.1rem; color: rgba(251, 247, 240, 0.85); max-width: 580px; margin-inline: auto; margin-bottom: 36px; line-height: 1.7;">
+                Stop by today and let our baristas craft your ideal cup.
+            </p>
+            <div class="btn-group" style="justify-content: center;">
+                <a href="contact.html" class="btn btn-amber">Visit SUZAN CAFÉ</a>
+                <a href="experiences.html" class="btn btn-outline">Explore Experiences</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================================
+         FOOTER
+         ========================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>SUZAN CAFÉ</h3>
+                    <p>A warm neighborhood coffee house celebrating honest coffee craft, artisanal bakes, and slow
+                        comforting moments.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cafe.html">The Café</a></li>
+                        <li><a href="menu.html">Full Menu</a></li>
+                        <li><a href="story.html">Our Story</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="contact.html">Visit Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Opening Hours</h4>
+                    <ul class="footer-links">
+                        <li style="color: var(--text-light-muted);">Monday – Friday</li>
+                        <li style="font-weight: 600; color: #ffffff; margin-bottom: 12px;">7:30 AM – 9:00 PM</li>
+                        <li style="color: var(--text-light-muted);">Saturday – Sunday</li>
+                        <li style="font-weight: 600; color: #ffffff;">8:00 AM – 10:00 PM</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Visit & Connect</h4>
+                    <ul class="footer-links">
+                        <li style="color: var(--text-light-muted);">142 Roastery Lane, Market District</li>
+                        <li style="color: var(--text-light-muted);">hello@suzancafe.com</li>
+                        <li style="color: var(--text-light-muted); margin-bottom: 14px;">+1 (555) 234-5678</li>
+                        <li><a href="contact.html" class="btn btn-outline"
+                                style="padding: 8px 18px; font-size: 0.72rem;">Say Hello</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 SUZAN CAFÉ. All rights reserved.</p>
+                <p>Crafted with care & passion for authentic coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

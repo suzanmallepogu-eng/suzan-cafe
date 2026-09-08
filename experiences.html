@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiences — SUZAN CAFÉ</title>
+    <meta name="description"
+        content="Discover the distinct moments and atmospheres at SUZAN CAFÉ: Slow Mornings, Creative Focus, Afternoon Catch-ups, and Evening Coffee Wind-downs.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================================
+         NAVIGATION BAR
+         ========================================================== -->
+    <header class="header-nav" id="mainHeader">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand-logo" aria-label="SUZAN CAFÉ Home">
+                <span class="logo-main">SUZAN CAFÉ</span>
+                <span class="logo-sub">Coffee • Bakes • Moments</span>
+            </a>
+
+            <nav class="nav-menu" aria-label="Primary Navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="cafe.html" class="nav-link">The Café</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="story.html" class="nav-link">Our Story</a>
+                <a href="experiences.html" class="nav-link active">Experiences</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions" style="display: flex; align-items: center; gap: 16px;">
+                <a href="contact.html" class="nav-cta-btn">Visit Us</a>
+                <button class="mobile-toggle" aria-label="Toggle navigation menu" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div>
+            <div style="margin-bottom: 30px;">
+                <span class="logo-main" style="color: var(--coffee-dark);">SUZAN CAFÉ</span>
+                <span class="logo-sub" style="color: var(--text-muted); display: block;">Coffee • Bakes • Moments</span>
+            </div>
+            <nav class="mobile-nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="cafe.html" class="nav-link">The Café</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="story.html" class="nav-link">Our Story</a>
+                <a href="experiences.html" class="nav-link active">Experiences</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+        <div style="border-top: 1px solid var(--beige-border); padding-top: 20px;">
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">7:30 AM – 9:00 PM Daily</p>
+            <a href="contact.html" class="btn btn-amber" style="width: 100%;">Find Our Café</a>
+        </div>
+    </div>
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+
+    <!-- ==========================================================
+         PAGE HERO
+         ========================================================== -->
+    <section class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('images/experiences/slow-mornings.jpg');"></div>
+        <div class="container page-hero-content reveal">
+            <span class="section-tag" style="color: var(--amber-soft);">Café Rituals</span>
+            <h1>THE SUZAN CAFÉ EXPERIENCE</h1>
+            <p class="section-subtitle" style="margin-inline: auto;">
+                Every time of day carries its own beauty. Discover the distinct atmospheres that make every visit
+                memorable.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- ==========================================================
+         INTERACTIVE FEATURE: CHOOSE YOUR COFFEE MOOD
+         ========================================================== -->
+    <section class="section" id="coffee-mood">
+        <div class="container">
+            <div class="mood-selector-container reveal">
+                <div class="text-center" style="max-width: 680px; margin-inline: auto;">
+                    <span class="section-tag">Interactive Ritual Matcher</span>
+                    <h2 class="section-title">Choose Your Coffee Mood</h2>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                        Select what you are feeling right now, and let us recommend the ideal drink and corner for your
+                        visit.
+                    </p>
+                </div>
+
+                <!-- Mood Buttons -->
+                <div class="mood-buttons-grid">
+                    <button class="mood-btn active" data-mood="morning">
+                        <span class="mood-icon">☀️</span>
+                        <span>Slow Morning</span>
+                    </button>
+                    <button class="mood-btn" data-mood="focus">
+                        <span class="mood-icon">💻</span>
+                        <span>Focus Time</span>
+                    </button>
+                    <button class="mood-btn" data-mood="catchup">
+                        <span class="mood-icon">☕</span>
+                        <span>Catch Up</span>
+                    </button>
+                    <button class="mood-btn" data-mood="sweet">
+                        <span class="mood-icon">🍰</span>
+                        <span>Sweet Moment</span>
+                    </button>
+                    <button class="mood-btn" data-mood="evening">
+                        <span class="mood-icon">🌙</span>
+                        <span>Evening Coffee</span>
+                    </button>
+                </div>
+
+                <!-- Live Recommendation Output -->
+                <div id="moodResult">
+                    <div class="mood-result-card">
+                        <span class="section-tag">Warm ceramic cup, natural morning light & gentle pace</span>
+                        <h3 style="font-size: 2rem; color: var(--coffee-dark); margin-bottom: 8px;">Slow Morning Ritual
+                        </h3>
+                        <p
+                            style="font-size: 1.1rem; font-weight: 600; color: var(--amber-accent); margin-bottom: 14px;">
+                            Recommended: Artisan Flat White with Silky Microfoam & Warm Butter Croissant</p>
+                        <p style="color: var(--text-secondary); line-height: 1.7; font-size: 0.95rem;">
+                            Begin your morning in our sunlit window corner. Let the natural warmth of the sun and the
+                            rich nutty notes of freshly extracted espresso ease you into a peaceful, focused day.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================================
+         CURATED EXPERIENCES LIST
+         ========================================================== -->
+    <section class="section section-alt" id="experiences-list">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-tag">Moments in the Café</span>
+                <h2 class="section-title">Five Ways to Experience SUZAN CAFÉ</h2>
+                <p class="section-subtitle">
+                    From quiet solo reflections to vibrant afternoon gatherings, find your rhythm in our space.
+                </p>
+            </div>
+
+            <!-- Experience 1: Slow Mornings -->
+            <article class="experience-card-wide reveal">
+                <div class="exp-img-wrap">
+                    <img src="images/experiences/slow-mornings.jpg"
+                        alt="Quiet morning sunlight streaming on wooden table with warm coffee" loading="lazy">
+                </div>
+                <div class="exp-body">
+                    <span class="section-tag">7:30 AM – 11:00 AM</span>
+                    <h3 style="font-size: 2rem; margin-bottom: 12px; color: var(--coffee-dark);">Slow Mornings</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px; line-height: 1.7;">
+                        The golden hour inside SUZAN CAFÉ is peaceful and unhurried. Watch the daylight stream across
+                        the wooden floor as fresh butter croissants come out of the oven.
+                    </p>
+                    <p
+                        style="font-size: 0.88rem; color: var(--amber-accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">
+                        Pair with: Single-Origin Pour Over & Warm Croissant
+                    </p>
+                </div>
+            </article>
+
+            <!-- Experience 2: Coffee & Conversations -->
+            <article class="experience-card-wide reveal">
+                <div class="exp-img-wrap">
+                    <img src="images/experiences/conversations.jpg"
+                        alt="Friends having a lively conversation over coffee at wooden table" loading="lazy">
+                </div>
+                <div class="exp-body">
+                    <span class="section-tag">11:00 AM – 3:00 PM</span>
+                    <h3 style="font-size: 2rem; margin-bottom: 12px; color: var(--coffee-dark);">Coffee & Conversations
+                    </h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px; line-height: 1.7;">
+                        Mid-day brings the friendly hum of shared laughter, reunion coffees, and creative meetings. Our
+                        spacious oak tables provide the perfect setting to connect without feeling rushed.
+                    </p>
+                    <p
+                        style="font-size: 0.88rem; color: var(--amber-accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">
+                        Pair with: Velvety Caffe Latte & Basque Cheesecake
+                    </p>
+                </div>
+            </article>
+
+            <!-- Experience 3: Work & Create -->
+            <article class="experience-card-wide reveal">
+                <div class="exp-img-wrap">
+                    <img src="images/experiences/work-create.jpg"
+                        alt="Productive corner table with notebook, latte, and natural lighting" loading="lazy">
+                </div>
+                <div class="exp-body">
+                    <span class="section-tag">All Day Long</span>
+                    <h3 style="font-size: 2rem; margin-bottom: 12px; color: var(--coffee-dark);">Work & Create</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px; line-height: 1.7;">
+                        Equipped with high-speed WiFi, convenient power outlets, natural daylight, and ergonomic
+                        seating, SUZAN CAFÉ is beloved by writers, designers, and thinkers seeking focus.
+                    </p>
+                    <p
+                        style="font-size: 0.88rem; color: var(--amber-accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">
+                        Pair with: Double Espresso or 18-Hour Cold Brew
+                    </p>
+                </div>
+            </article>
+
+            <!-- Experience 4: Meet & Connect -->
+            <article class="experience-card-wide reveal">
+                <div class="exp-img-wrap">
+                    <img src="images/experiences/meet-connect.jpg"
+                        alt="Group of people sharing artisan coffee tasting flight" loading="lazy">
+                </div>
+                <div class="exp-body">
+                    <span class="section-tag">Afternoons & Weekends</span>
+                    <h3 style="font-size: 2rem; margin-bottom: 12px; color: var(--coffee-dark);">Meet & Connect</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px; line-height: 1.7;">
+                        Gather with your community. Our open layout and welcoming baristas make it easy to host book
+                        clubs, small meetups, or simply meet friendly neighbors over artisan brews.
+                    </p>
+                    <p
+                        style="font-size: 0.88rem; color: var(--amber-accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">
+                        Pair with: Coffee Tasting Flight & Artisan Pastry Board
+                    </p>
+                </div>
+            </article>
+
+            <!-- Experience 5: Evening Moments -->
+            <article class="experience-card-wide reveal">
+                <div class="exp-img-wrap">
+                    <img src="images/experiences/evening-moments.jpg"
+                        alt="Warm glowing evening ambiance at SUZAN CAFÉ with amber pendant lights" loading="lazy">
+                </div>
+                <div class="exp-body">
+                    <span class="section-tag">5:00 PM – 9:00 PM</span>
+                    <h3 style="font-size: 2rem; margin-bottom: 12px; color: var(--coffee-dark);">Evening Coffee Moments
+                    </h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 16px; line-height: 1.7;">
+                        As twilight sets in, the café dims to a cozy amber glow. Unwind after a busy day with specialty
+                        decaf espresso, rich artisan hot chocolates, or calming herbal infusions.
+                    </p>
+                    <p
+                        style="font-size: 0.88rem; color: var(--amber-accent); font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;">
+                        Pair with: Belgian Hot Chocolate & Sea-Salt Brownie
+                    </p>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- ==========================================================
+         FINAL CTA
+         ========================================================== -->
+    <section class="final-cta-section">
+        <div class="final-cta-bg" style="background-image: url('images/experiences/evening-moments.jpg');"></div>
+        <div class="container final-cta-content reveal">
+            <span class="section-tag" style="color: var(--amber-soft);">Your Table is Ready</span>
+            <h2 style="font-size: clamp(2.4rem, 5vw, 4rem); margin-bottom: 20px; color: #ffffff;">
+                DISCOVER YOUR OWN CAFÉ RITUAL.
+            </h2>
+            <p
+                style="font-size: 1.1rem; color: rgba(251, 247, 240, 0.85); max-width: 580px; margin-inline: auto; margin-bottom: 36px; line-height: 1.7;">
+                Whether morning or evening, we have a warm cup waiting for you.
+            </p>
+            <div class="btn-group" style="justify-content: center;">
+                <a href="contact.html" class="btn btn-amber">Plan Your Visit</a>
+                <a href="menu.html" class="btn btn-outline">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================================
+         FOOTER
+         ========================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>SUZAN CAFÉ</h3>
+                    <p>A warm neighborhood coffee house celebrating honest coffee craft, artisanal bakes, and slow
+                        comforting moments.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cafe.html">The Café</a></li>
+                        <li><a href="menu.html">Full Menu</a></li>
+                        <li><a href="story.html">Our Story</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="contact.html">Visit Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Opening Hours</h4>
+                    <ul class="footer-links">
+                        <li style="color: var(--text-light-muted);">Monday – Friday</li>
+                        <li style="font-weight: 600; color: #ffffff; margin-bottom: 12px;">7:30 AM – 9:00 PM</li>
+                        <li style="color: var(--text-light-muted);">Saturday – Sunday</li>
+                        <li style="font-weight: 600; color: #ffffff;">8:00 AM – 10:00 PM</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Visit & Connect</h4>
+                    <ul class="footer-links">
+                        <li style="color: var(--text-light-muted);">142 Roastery Lane, Market District</li>
+                        <li style="color: var(--text-light-muted);">hello@suzancafe.com</li>
+                        <li style="color: var(--text-light-muted); margin-bottom: 14px;">+1 (555) 234-5678</li>
+                        <li><a href="contact.html" class="btn btn-outline"
+                                style="padding: 8px 18px; font-size: 0.72rem;">Say Hello</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 SUZAN CAFÉ. All rights reserved.</p>
+                <p>Crafted with care & passion for authentic coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

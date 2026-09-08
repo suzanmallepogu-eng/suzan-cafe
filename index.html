@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUZAN CAFÉ — Where Every Cup Becomes a Moment</title>
+    <meta name="description"
+        content="Welcome to SUZAN CAFÉ. Discover freshly brewed specialty coffee, artisanal baked treats, warm architectural spaces, and peaceful moments worth staying for.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ==========================================================
+         NAVIGATION BAR
+         ========================================================== -->
+    <header class="header-nav" id="mainHeader">
+        <div class="container nav-wrap">
+            <a href="index.html" class="brand-logo" aria-label="SUZAN CAFÉ Home">
+                <span class="logo-main">SUZAN CAFÉ</span>
+                <span class="logo-sub">Coffee • Bakes • Moments</span>
+            </a>
+
+            <nav class="nav-menu" aria-label="Primary Navigation">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="cafe.html" class="nav-link">The Café</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="story.html" class="nav-link">Our Story</a>
+                <a href="experiences.html" class="nav-link">Experiences</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions" style="display: flex; align-items: center; gap: 16px;">
+                <a href="contact.html" class="nav-cta-btn">Visit Us</a>
+                <button class="mobile-toggle" aria-label="Toggle navigation menu" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div>
+            <div style="margin-bottom: 30px;">
+                <span class="logo-main" style="color: var(--coffee-dark);">SUZAN CAFÉ</span>
+                <span class="logo-sub" style="color: var(--text-muted); display: block;">Coffee • Bakes • Moments</span>
+            </div>
+            <nav class="mobile-nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="cafe.html" class="nav-link">The Café</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="story.html" class="nav-link">Our Story</a>
+                <a href="experiences.html" class="nav-link">Experiences</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+        <div style="border-top: 1px solid var(--beige-border); padding-top: 20px;">
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">7:30 AM – 9:00 PM Daily</p>
+            <a href="contact.html" class="btn btn-amber" style="width: 100%;">Find Our Café</a>
+        </div>
+    </div>
+    <div class="mobile-backdrop" id="mobileBackdrop"></div>
+
+
+    <!-- ==========================================================
+         HERO SECTION (Cinematic Video Hero)
+         ========================================================== -->
+    <section class="hero-section" id="hero">
+        <div class="hero-video-container">
+            <video class="hero-video" autoplay muted loop playsinline poster="images/hero/suzan-cafe-hero-poster.jpg">
+                <source src="video/suzan-cafe-hero.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div class="hero-brand-pill">Specialty Coffee & Bakes</div>
+            <h1 class="hero-headline">WHERE EVERY CUP BECOMES A MOMENT.</h1>
+            <p class="hero-subtext">Freshly brewed coffee, beautiful spaces, and little moments worth staying for.</p>
+
+            <div class="btn-group" style="justify-content: center;">
+                <a href="menu.html" class="btn btn-amber">Explore Menu</a>
+                <a href="cafe.html" class="btn btn-outline">Discover Our Café</a>
+            </div>
+        </div>
+
+        <a href="#welcome" class="hero-scroll-indicator" aria-label="Scroll down to welcome section">
+            <span>Scroll to Explore</span>
+            <div class="scroll-line"></div>
+        </a>
+
+        <!-- Sound Toggle Button -->
+        <button class="hero-sound-toggle" id="heroSoundToggle" aria-label="Toggle ambient café video sound"
+            title="Turn sound on/off">
+            <svg class="sound-icon sound-icon-muted" viewBox="0 0 24 24" width="16" height="16" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15"></line>
+                <line x1="17" y1="9" x2="23" y2="15"></line>
+            </svg>
+            <svg class="sound-icon sound-icon-unmuted" viewBox="0 0 24 24" width="16" height="16" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                style="display: none;">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+            <span class="sound-label">Sound Off</span>
+        </button>
+    </section>
+
+
+    <!-- ==========================================================
+         WELCOME SECTION (Split Layout)
+         ========================================================== -->
+    <section class="section" id="welcome">
+        <div class="container">
+            <div class="split-grid">
+                <div class="split-content reveal">
+                    <span class="section-tag">Welcome to SUZAN CAFÉ</span>
+                    <h2 class="section-title">A thoughtful haven for coffee lovers and slow afternoons.</h2>
+                    <p class="lead" style="margin-bottom: 18px;">
+                        At SUZAN CAFÉ, coffee is an art of patience, aroma, and connection.
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 24px; line-height: 1.7;">
+                        Step inside a welcoming environment built with warm natural wood, sun-filled windows, trailing
+                        greenery, and the comforting rhythm of our espresso bar. Whether you are catching up with
+                        friends, diving into a quiet book, or enjoying your morning ritual, every corner is designed for
+                        comfort and ease.
+                    </p>
+
+                    <div class="btn-group">
+                        <a href="story.html" class="btn btn-primary">Our Story</a>
+                        <a href="cafe.html" class="btn btn-outline-dark">Explore the Space</a>
+                    </div>
+                </div>
+
+                <div class="split-visual reveal">
+                    <div class="image-frame">
+                        <img src="images/cafe/cafe-interior-main.jpg"
+                            alt="Interior view of SUZAN CAFÉ with warm wooden tables and natural sunlight"
+                            loading="lazy">
+                        <div class="image-badge">Crafted with Care</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================================
+         SIGNATURE COFFEE SECTION
+         ========================================================== -->
+    <section class="section section-alt" id="signature-coffee">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-tag">Our Signature Coffee</span>
+                <h2 class="section-title">Brewed with passion, served with warmth.</h2>
+                <p class="section-subtitle">
+                    Each signature cup is pulled from freshly roasted specialty beans, balanced with velvety steamed
+                    milk and crafted by dedicated baristas.
+                </p>
+            </div>
+
+            <div class="coffee-grid">
+                <!-- Espresso -->
+                <article class="coffee-card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/espresso.jpg"
+                            alt="Double shot espresso in ceramic cup with rich golden crema" loading="lazy">
+                        <span class="card-price-tag">$3.80</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Espresso</h3>
+                        <p class="card-desc">Rich double shot extraction with a dense golden crema, deep cocoa notes,
+                            and a subtle hazelnut finish.</p>
+                        <div class="card-notes">Single Origin • Full Bodied</div>
+                    </div>
+                </article>
+
+                <!-- Cappuccino -->
+                <article class="coffee-card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/cappuccino.jpg"
+                            alt="Artisan cappuccino with silky foam and delicate dusting" loading="lazy">
+                        <span class="card-price-tag">$4.75</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Cappuccino</h3>
+                        <p class="card-desc">Balanced harmony of bold espresso, sweet steamed milk, and a thick pillow
+                            of velvety microfoam.</p>
+                        <div class="card-notes">Velvety Foam • Caramel Notes</div>
+                    </div>
+                </article>
+
+                <!-- Latte -->
+                <article class="coffee-card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/latte.jpg" alt="Caffe latte with hand-poured rosetta latte art"
+                            loading="lazy">
+                        <span class="card-price-tag">$5.20</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Latte</h3>
+                        <p class="card-desc">Silky smooth steamed milk gently poured over our signature espresso blend,
+                            finished with hand-crafted latte art.</p>
+                        <div class="card-notes">Silky Texture • Balanced Sweetness</div>
+                    </div>
+                </article>
+
+                <!-- Mocha -->
+                <article class="coffee-card reveal">
+                    <div class="card-img-wrap">
+                        <img src="images/menu/mocha.jpg" alt="Rich dark chocolate mocha with cocoa notes"
+                            loading="lazy">
+                        <span class="card-price-tag">$5.60</span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">Mocha</h3>
+                        <p class="card-desc">Single-origin espresso blended with melted Belgian dark chocolate, steamed
+                            milk, and a dusting of organic cocoa.</p>
+                        <div class="card-notes">Belgian Chocolate • Decadent</div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center" style="margin-top: 50px;">
+                <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================================
+         COFFEE CRAFT JOURNEY SECTION
+         ========================================================== -->
+    <section class="section section-dark" id="coffee-craft">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-tag">Crafted With Care</span>
+                <h2 class="section-title">The journey in every cup.</h2>
+                <p class="section-subtitle">
+                    From ethical highland farms to the final pour, every step of our craft is dedicated to exceptional
+                    quality and honest flavor.
+                </p>
+            </div>
+
+            <div class="craft-grid">
+                <div class="craft-step-card reveal">
+                    <div class="step-number">01</div>
+                    <h4>Ethical Beans</h4>
+                    <p>We source 100% specialty grade Arabica beans from sustainable, high-altitude farms with full
+                        traceability and fair partnership.</p>
+                </div>
+
+                <div class="craft-step-card reveal">
+                    <div class="step-number">02</div>
+                    <h4>Precision Grind</h4>
+                    <p>Each batch is freshly ground to micro-millimeter precision seconds before brewing to preserve
+                        volatile aromatic oils.</p>
+                </div>
+
+                <div class="craft-step-card reveal">
+                    <div class="step-number">03</div>
+                    <h4>Artisan Extraction</h4>
+                    <p>Calibrated temperature and 9-bar pressure extract the sweetest fruit and chocolate notes with a
+                        dense, shimmering crema.</p>
+                </div>
+
+                <div class="craft-step-card reveal">
+                    <div class="step-number">04</div>
+                    <h4>Velvety Pour</h4>
+                    <p>Fresh whole or plant-based milks are textured to silky microfoam perfection and poured with
+                        thoughtful presentation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================================
+         CAFÉ EXPERIENCE HIGHLIGHTS
+         ========================================================== -->
+    <section class="section" id="experience-highlights">
+        <div class="container">
+            <div class="split-grid reversed">
+                <div class="split-content reveal">
+                    <span class="section-tag">The SUZAN CAFÉ Experience</span>
+                    <h2 class="section-title">A space created for life's warmest moments.</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.7;">
+                        Whether you come for a peaceful early morning coffee before the city awakens, an inspiring
+                        afternoon of creative work with natural light, or an evening chat over pastries, SUZAN CAFÉ
+                        welcomes you with genuine hospitality.
+                    </p>
+
+                    <div class="story-highlights">
+                        <div class="highlight-item">
+                            <h4>Slow Mornings</h4>
+                            <p>Quiet seating & fresh pastries fresh from the oven.</p>
+                        </div>
+                        <div class="highlight-item">
+                            <h4>Good Conversations</h4>
+                            <p>Spacious wooden tables for gathering & sharing.</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 32px;">
+                        <a href="experiences.html" class="btn btn-amber">Discover Experiences</a>
+                    </div>
+                </div>
+
+                <div class="split-visual reveal">
+                    <div class="image-frame">
+                        <img src="images/experiences/slow-mornings.jpg"
+                            alt="Cozy seating corner inside SUZAN CAFÉ with coffee and morning light" loading="lazy">
+                        <div class="image-badge">Warm & Welcoming</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================================
+         GALLERY PREVIEW SECTION (With Lightbox)
+         ========================================================== -->
+    <section class="section section-alt" id="gallery-preview">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="section-tag">Inside SUZAN CAFÉ</span>
+                <h2 class="section-title">A glimpse into our daily atmosphere.</h2>
+                <p class="section-subtitle">
+                    Moments captured inside our café — where natural textures, rich aromas, and authentic conversations
+                    come together.
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <img src="images/gallery/gallery-1.jpg"
+                        alt="Barista pulling fresh espresso at the wooden coffee counter" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Espresso Extraction Bar</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal">
+                    <img src="images/gallery/gallery-2.jpg"
+                        alt="Wide view of SUZAN CAFÉ dining room and wood beamed ceiling" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Main Dining Space & Sunlit Tables</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal">
+                    <img src="images/gallery/gallery-3.jpg" alt="Cozy corner table with cappuccino and open book"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Cozy Reading & Morning Corner</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal">
+                    <img src="images/gallery/gallery-4.jpg" alt="Artisan café details and warm pendant lighting"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Warm Ambient Lighting</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal">
+                    <img src="images/gallery/gallery-5.jpg" alt="Espresso machine and artisan coffee equipment"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Barista Craft Station</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item reveal">
+                    <img src="images/gallery/gallery-7.jpg" alt="Sunlit tables and lush indoor plants" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span class="gallery-caption">Natural Window Light & Plants</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 45px;">
+                <a href="cafe.html" class="btn btn-outline-dark">Explore Full Café Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close image lightbox">&times;</button>
+            <button class="lightbox-nav lightbox-prev" aria-label="Previous image">&#10094;</button>
+            <img class="lightbox-img" src="" alt="">
+            <div class="lightbox-caption"></div>
+            <button class="lightbox-nav lightbox-next" aria-label="Next image">&#10095;</button>
+        </div>
+    </div>
+
+
+    <!-- ==========================================================
+         FOUNDER STORY SECTION (Natural & Connected)
+         ========================================================== -->
+    <section class="section" id="founder-story">
+        <div class="container">
+            <div class="split-grid">
+                <div class="split-visual reveal">
+                    <div class="founder-img-wrap">
+                        <img src="images/story/suzan-cafe-founder.jpg"
+                            alt="Founder of SUZAN CAFÉ holding a warm cup of coffee at the café counter" loading="lazy">
+                    </div>
+                </div>
+
+                <div class="split-content reveal">
+                    <span class="section-tag">The Person Behind the Craft</span>
+                    <h2 class="section-title">The Story Behind SUZAN CAFÉ</h2>
+
+                    <p class="lead" style="color: var(--coffee-dark);">
+                        "I wanted to build a place where coffee feels genuine, unhurried, and deeply comforting."
+                    </p>
+
+                    <p style="color: var(--text-secondary); margin-bottom: 20px; line-height: 1.7;">
+                        SUZAN CAFÉ grew from a simple passion: the belief that a neighborhood café should be more than a
+                        quick stop. It should be a warm sanctuary where people feel at ease, where the coffee is brewed
+                        with meticulous attention to detail, and where every guest feels welcomed by name.
+                    </p>
+                    <p style="color: var(--text-secondary); margin-bottom: 28px; line-height: 1.7;">
+                        Every wood grain on our tables, every beam overhead, and every cup we serve reflects that
+                        dedication to honest hospitality and craft.
+                    </p>
+
+                    <a href="story.html" class="btn btn-primary">Read Our Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================================
+         FINAL CTA SECTION
+         ========================================================== -->
+    <section class="final-cta-section">
+        <div class="final-cta-bg" style="background-image: url('images/hero/suzan-cafe-hero-poster.jpg');"></div>
+        <div class="container final-cta-content reveal">
+            <span class="section-tag" style="color: var(--amber-soft);">Join Us for Coffee</span>
+            <h2 style="font-size: clamp(2.4rem, 5vw, 4rem); margin-bottom: 20px; color: #ffffff;">
+                YOUR NEXT COFFEE MOMENT STARTS HERE.
+            </h2>
+            <p
+                style="font-size: 1.1rem; color: rgba(251, 247, 240, 0.85); max-width: 580px; margin-inline: auto; margin-bottom: 36px; line-height: 1.7;">
+                Fresh espresso is on the bar, warm bakes are in the oven, and a comfortable seat is waiting for you.
+            </p>
+            <div class="btn-group" style="justify-content: center;">
+                <a href="contact.html" class="btn btn-amber">Visit SUZAN CAFÉ</a>
+                <a href="menu.html" class="btn btn-outline">Explore Menu</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================================
+         FOOTER
+         ========================================================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>SUZAN CAFÉ</h3>
+                    <p>A warm neighborhood coffee house celebrating honest coffee craft, artisanal bakes, and slow
+                        comforting moments.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cafe.html">The Café</a></li>
+                        <li><a href="menu.html">Full Menu</a></li>
+                        <li><a href="story.html">Our Story</a></li>
+                        <li><a href="experiences.html">Experiences</a></li>
+                        <li><a href="contact.html">Visit Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Opening Hours</h4>
+                    <ul class="footer-links">
+                        <li style="color: var(--text-light-muted);">Monday – Friday</li>
+                        <li style="font-weight: 600; color: #ffffff; margin-bottom: 12px;">7:30 AM – 9:00 PM</li>
+                        <li style="color: var(--text-light-muted);">Saturday – Sunday</li>
+                        <li style="font-weight: 600; color: #ffffff;">8:00 AM – 10:00 PM</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Visit & Connect</h4>
+                    <ul class="footer-links">
+                        <li style="color: var(--text-light-muted);">142 Roastery Lane, Market District</li>
+                        <li style="color: var(--text-light-muted);">hello@suzancafe.com</li>
+                        <li style="color: var(--text-light-muted); margin-bottom: 14px;">+1 (555) 234-5678</li>
+                        <li><a href="contact.html" class="btn btn-outline"
+                                style="padding: 8px 18px; font-size: 0.72rem;">Say Hello</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 SUZAN CAFÉ. All rights reserved.</p>
+                <p>Crafted with care & passion for authentic coffee.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
